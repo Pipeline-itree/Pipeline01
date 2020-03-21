@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.itree.test.CalculatorTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 1, Skipped: 1, Time elapsed: 10.089 s <<< FAILURE! - in com.itree.test.CalculatorTest
+testmul(com.itree.test.CalculatorTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: Not yet implemented
+	at com.itree.test.CalculatorTest.testmul(CalculatorTest.java:85)
+
+squareRoot(com.itree.test.CalculatorTest)  Time elapsed: 10.002 s  <<< ERROR!
+java.lang.Exception: test timed out after 10000 milliseconds
+	at com.itree.test.CalculatorTest.squareRoot(CalculatorTest.java:92)
+
