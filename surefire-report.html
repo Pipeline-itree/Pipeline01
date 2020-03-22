@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<script type="text/javascript">
+function toggleDisplay(elementId) {
+ var elm = document.getElementById(elementId + 'error');
+ if (elm && typeof elm.style != "undefined") {
+ if (elm.style.display == "none") {
+ elm.style.display = "";
+ document.getElementById(elementId + 'off').style.display = "none";
+ document.getElementById(elementId + 'on').style.display = "inline";
+ } else if (elm.style.display == "") { elm.style.display = "none";
+ document.getElementById(elementId + 'off').style.display = "inline";
+ document.getElementById(elementId + 'on').style.display = "none";
+ } 
+ } 
+ }
+</script>
+<style type="text/css" media="all">
+@import url("./css/maven-base.css");
+@import url("./css/maven-theme.css");@import url("./css/site.css");
+</style>
+<link rel="stylesheet" href="./style/print.css" type="text/css" media="print"></link>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></meta>
+</head>
+
+<body class="composite">
+<div id="banner">
+
+
+<div class="clear">
+<hr/>
+</div>
+</div>
+<div id="breadcrumbs">
+<div class="xleft">Last Published: Tue Mar 17 16:12:41 CST 2020</div>
+<div class="xright"></div>
+<div class="clear">
+<hr/>
+</div>
+</div>
+<div id="leftColumn"><div id="navcolumn"><h5>Project Documentation</h5>
+<ul>
+  <li class="none">
+    <strong>
+      <a href="surefire-report.html">Maven Surefire Report</a>
+    </strong>
+  </li>
+</ul><a href="http://maven.apache.org/" title="Built by Maven" id="poweredBy">
+<img alt="Built by Maven" src="./images/logos/maven-feather.png"></img>
+</a>
+</div></div>
+<div id="bodyColumn">
+<div id="contentBox">
+<h2><a name="Summary"></a>Summary</h2><div class="section">[<a href="#Summary">Summary</a>][<a href="#Package_List">Package List</a>][<a href="#Test_Cases">Test Cases</a>]</div><table class="bodyTable"><tr class="a"></tr><tr class="b"></tr></table><table class="bodyTable"><tr class="a"><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td>11</td><td>1</td><td>1</td><td>1</td><td>72.727%</td><td>10.09</td></tr></table><br />Note: failures are anticipated and checked for with assertions while errors are unanticipated.<table class="bodyTable"><tr class="a"></tr><tr class="b"></tr></table><h2><a name="Package_List"></a>Package List</h2><div class="section">[<a href="#Summary">Summary</a>][<a href="#Package_List">Package List</a>][<a href="#Test_Cases">Test Cases</a>]</div><table class="bodyTable"><tr class="a"></tr><tr class="b"></tr></table><table class="bodyTable"><tr class="a"><th>Package</th><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td><a href="#com.itree.test">com.itree.test</a></td><td>11</td><td>1</td><td>1</td><td>1</td><td>72.727%</td><td>10.09</td></tr></table><br />Note: package statistics are not computed recursively, they only sum up all of its testsuites numbers.<h3><a name="com.itree.test"></a>com.itree.test</h3><table class="bodyTable"><tr class="a"><th></th><th>Class</th><th>Tests</th><th>Errors </th><th>Failures</th><th>Skipped</th><th>Success Rate</th><th>Time</th></tr><tr class="b"><td><a href="#com.itree.testCalculatorTest"><img src="images/icon_error_sml.gif" /></a></td><td><a href="#com.itree.testCalculatorTest">CalculatorTest</a></td><td>8</td><td>1</td><td>1</td><td>1</td><td>62.5%</td><td>10.089</td></tr><tr class="a"><td><a href="#com.itree.testSquareTest"><img src="images/icon_success_sml.gif" /></a></td><td><a href="#com.itree.testSquareTest">SquareTest</a></td><td>3</td><td>0</td><td>0</td><td>0</td><td>100%</td><td>0.001</td></tr></table><table class="bodyTable"><tr class="b"></tr><tr class="a"></tr></table><h2><a name="Test_Cases"></a>Test Cases</h2><div class="section">[<a href="#Summary">Summary</a>][<a href="#Package_List">Package List</a>][<a href="#Test_Cases">Test Cases</a>]</div><h3><a name="com.itree.testCalculatorTest"></a>CalculatorTest</h3><table class="bodyTable"><tr class="b"><td><img src="images/icon_success_sml.gif" /></td><td>testAdd</td><td>0.005</td></tr><tr class="a"><td><img src="images/icon_success_sml.gif" /></td><td>testDiv</td><td>0.003</td></tr><tr class="b"><td><img src="images/icon_success_sml.gif" /></td><td>testSqu</td><td>0.001</td></tr><tr class="a"><td><img src="images/icon_success_sml.gif" /></td><td>testSub</td><td>0.001</td></tr><tr class="b"><td><a href="#com.itree.test.CalculatorTest.testmul"><img src="images/icon_error_sml.gif" /></a></td><td><a href="#com.itree.test.CalculatorTest.testmul">testmul</a>  <div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('testmul');"><span style="display: inline;" id="testmuloff">+</span><span id="testmulon" style="display: none;">-</span> [ Detail ]</a></div></td><td>0.007</td></tr><tr class="a"><td></td><td>Not yet implemented</td><td></td></tr><tr class="b"><td></td><td>  <div id="testmulerror" style="display:none;"><div class="source"><pre>java.lang.AssertionError: Not yet implemented<br />at com.itree.test.CalculatorTest.testmul(CalculatorTest.java:85)<br /></pre></div></div></td><td></td></tr><tr class="a"><td><a href="#com.itree.test.CalculatorTest.test"><img src="images/icon_warning_sml.gif" /></a></td><td><a href="#com.itree.test.CalculatorTest.test">test</a>  <div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('test');"><span style="display: inline;" id="testoff">+</span><span id="teston" style="display: none;">-</span> [ Detail ]</a></div></td><td>0</td></tr><tr class="b"><td></td><td>skipped</td><td></td></tr><tr class="a"><td><img src="images/icon_success_sml.gif" /></td><td>divideByZero</td><td>0</td></tr><tr class="b"><td><a href="#com.itree.test.CalculatorTest.squareRoot"><img src="images/icon_error_sml.gif" /></a></td><td><a href="#com.itree.test.CalculatorTest.squareRoot">squareRoot</a>  <div class="detailToggle" style="display:inline"><a href="javascript:toggleDisplay('squareRoot');"><span style="display: inline;" id="squareRootoff">+</span><span id="squareRooton" style="display: none;">-</span> [ Detail ]</a></div></td><td>10.002</td></tr><tr class="a"><td></td><td>test timed out after 10000 milliseconds</td><td></td></tr><tr class="b"><td></td><td>  <div id="squareRooterror" style="display:none;"><div class="source"><pre>java.lang.Exception: test timed out after 10000 milliseconds<br />at com.itree.test.CalculatorTest.squareRoot(CalculatorTest.java:92)<br /></pre></div></div></td><td></td></tr></table><h3><a name="com.itree.testSquareTest"></a>SquareTest</h3><table class="bodyTable"><tr class="a"><td><img src="images/icon_success_sml.gif" /></td><td>square[0]</td><td>0</td></tr><tr class="b"><td><img src="images/icon_success_sml.gif" /></td><td>square[1]</td><td>0</td></tr><tr class="a"><td><img src="images/icon_success_sml.gif" /></td><td>square[2]</td><td>0</td></tr></table><table class="bodyTable"><tr class="b"></tr><tr class="a"></tr></table><h2><a name="Failure_Details"></a>Failure Details</h2><div class="section">[<a href="#Summary">Summary</a>][<a href="#Package_List">Package List</a>][<a href="#Test_Cases">Test Cases</a>]</div><table class="bodyTable"><tr class="b"></tr><tr class="a"></tr></table><table class="bodyTable"><tr class="b"><td><img src="images/icon_error_sml.gif" /></td><td><a name="com.itree.test.CalculatorTest.testmul"></a>testmul</td></tr><tr class="a"><td></td><td>java.lang.AssertionError: Not yet implemented</td></tr>    <tr class="b"><td></td><td>  <div id="testmulerror" >com.itree.test.CalculatorTest:85</div></td></tr><tr class="a"><td><img src="images/icon_warning_sml.gif" /></td><td><a name="com.itree.test.CalculatorTest.test"></a>test</td></tr><tr class="b"><td></td><td>skipped: skipped</td></tr><tr class="a"><td><img src="images/icon_error_sml.gif" /></td><td><a name="com.itree.test.CalculatorTest.squareRoot"></a>squareRoot</td></tr><tr class="b"><td></td><td>java.lang.Exception: test timed out after 10000 milliseconds</td></tr>    <tr class="a"><td></td><td>  <div id="squareRooterror" >com.itree.test.CalculatorTest:92</div></td></tr></table><table class="bodyTable"><tr class="b"></tr><tr class="a"></tr></table><table class="bodyTable"><tr class="b"></tr><tr class="a"></tr></table>
+</div>
+</div>
+<div class="clear">
+<hr/>
+</div>
+<div id="footer">
+<div class="xright">&#169; 2002-2005, Apache Software Foundation</div>
+<div class="clear">
+<hr/>
+</div>
+</div>
+</body>
+</html>
